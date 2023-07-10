@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Features of AWS S3</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Josefin+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+            Understanding AWS S3
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="navbar-dropdown">
+                    <label for="dropdown-toggle1" class="dropdown-toggle-label">Topics</label>
+                    <ul class="dropdown-menu">
+                        <li><a href="s3.html">Understanding AWS S3</a></li>
+                        <li><a href="static.html">Static vs. Dynamic Websites</a></li>
+                        <li><a href="#">AWS CLI and/or AWS SDKs</a></li>
+                        <li><a href="#">DNS Configuration</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Performance Optimization</a></li>
+                        <li><a href="#">Cost Optimization</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>                
+    </header>
+
+    <section id="#section-aws-s3">
+        <p>Learn about Amazon S3 (Simple Storage Service), one of the most widely used cloud storage services. Explore its features, storage classes, and how it enables reliable and scalable object storage in the cloud.</p>
+        <h2>What is S3?</h2>
+        <p>Think of S3 as a virtual storage unit or a digital warehouse. S3 allows for customers to store objects(files, directories, etc,) in a way that is secure and scalable. 
+        <h2>How are objects stored?</h2>
+        <p>Any data a customer wishes to store in S3 is uploaded into an S3 bucket which can then be configured to meet their needs via bucket policies or access control lists (ACLs).</p>
+        <h2>Features of AWS S3</h2>
+        <ul id="s3-indent">
+            <li>
+                <h3>Scalability</h3><li>
+                    S3 provides unlimited storage capacity for your data.
+                </li> 
+                <h3>Durability</h3>
+                <li>
+                    Your objects are redundantly stored across multile availability zones. (99.99999999999% guranteed by Amazon)
+                </li>
+                <h3>Availability</h3>
+                <li>Access your data reliably at any time. (99.9% guranteed by Amazon)</li>
+                <h3>Versioning</h3>
+                <li>
+                    Preserve and restore previous versions of objects. 
+                </li>
+                <h3>Lifecycle Management</h3>
+                <li>
+                    Automate object movement and deletion based on rules you s
+                </li>
+            </li>
+        </ul>
+        <h2>Storage Classes (S3 tiers)</h2>
+        <ul id="s3-indent">
+            <li>
+                <h3>Standard</h3>
+                <li>
+                    High-performance storage for frequently accessed data.
+                </li>
+                <h3>Intellligent-Tiering</h3>
+                <li>
+                    Automatically moves objectes between access tiers to optimize costs. 
+                </li>
+                <h3>Glacier</h3>
+                <li>
+                    Low-cost storage for archiving rarely accessed data.
+                </li>
+                <h3>Glacier Deep Archive</h3>
+                <li>
+                    Most cost-effective storage for long-term archiving. 
+                </li>
+            </li>
+        </ul>
+        <h2>Reliable and Scalable Object Storage</h2>
+        <ul id="s3-indent">
+            <li>
+                <li>
+                    S3's distributed architecture ensures readability and scalability.
+                </li>
+                <li>
+                    Easily scale your storage resources without capacity planning. 
+                </li>
+            </li>
+        </ul>
+        <h2>
+            Conclusion:
+        </h2>
+        <p>Understanding AWS S3 is crucial for leveraging its reliable and scalable object storage. With its features, storage classes, and flexibility, AWS S3 provides a cost-effective solution for various storage needs.</p>
+    </section>
+</body>
+</html>
