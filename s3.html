@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Features of AWS S3</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="s3.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
@@ -44,62 +44,61 @@
         <p>Think of S3 as a virtual storage unit or a digital warehouse. S3 allows for customers to store objects(files, directories, etc,) in a way that is secure and scalable. 
         <h2>How are objects stored?</h2>
         <p>Any data a customer wishes to store in S3 is uploaded into an S3 bucket which can then be configured to meet their needs via bucket policies or access control lists (ACLs).</p>
+        <!--Features-->
         <h2>Features of AWS S3</h2>
         <ul id="s3-indent">
-            <li>
-                <h3>Scalability</h3><li>
+            <li>Scalability</li>
+                <ul> 
                     S3 provides unlimited storage capacity for your data.
-                </li> 
-                <h3>Durability</h3>
-                <li>
-                    Your objects are redundantly stored across multile availability zones. (99.99999999999% guranteed by Amazon)
-                </li>
-                <h3>Availability</h3>
-                <li>Access your data reliably at any time. (99.9% guranteed by Amazon)</li>
-                <h3>Versioning</h3>
-                <li>
-                    Preserve and restore previous versions of objects. 
-                </li>
-                <h3>Lifecycle Management</h3>
-                <li>
-                    Automate object movement and deletion based on rules you s
-                </li>
-            </li>
+                </ul>
+            <li>Durability</li>
+                 <ul>
+                    Objects are redundantly stored across multile availability zones. (99.99999999999% guranteed by Amazon)
+                </ul>
+            <li>Availability</li>
+                <ul>
+                    Access your data reliably at any time. (99.9% guranteed by Amazon)
+                </ul>
+            <li>Versioning</li>
+                <ul>
+                    Preserve and restore previous versions of objects.
+                </ul>
+            <li>Lifecycle Management</li>
+                <ul>
+                    Automate object movement and deletion based on rules you set
+                </ul> 
         </ul>
+        <!--Storage tiers-->
         <h2>Storage Classes (S3 tiers)</h2>
         <ul id="s3-indent">
-            <li>
-                <h3>Standard</h3>
-                <li>
+            <li>Standard</li>
+                <ul>
                     High-performance storage for frequently accessed data.
-                </li>
-                <h3>Intellligent-Tiering</h3>
-                <li>
+                </ul>
+            <li>Intellligent-Tiering</li>
+                <ul>
                     Automatically moves objectes between access tiers to optimize costs. 
-                </li>
-                <h3>Glacier</h3>
-                <li>
+                </ul>
+            <li>Glacier</li>
+                <ul>
                     Low-cost storage for archiving rarely accessed data.
-                </li>
-                <h3>Glacier Deep Archive</h3>
-                <li>
+                </ul>
+            <li>Glacier Deep Archive</li>
+                <ul>
                     Most cost-effective storage for long-term archiving. 
-                </li>
-            </li>
+                </ul>
         </ul>
         <h2>Reliable and Scalable Object Storage</h2>
         <ul id="s3-indent">
-            <li>
                 <li>
                     S3's distributed architecture ensures readability and scalability.
                 </li>
                 <li>
                     Easily scale your storage resources without capacity planning. 
                 </li>
-            </li>
         </ul>
         <h2>
-            Conclusion:
+            Conclusion
         </h2>
         <p>Understanding AWS S3 is crucial for leveraging its reliable and scalable object storage. With its features, storage classes, and flexibility, AWS S3 provides a cost-effective solution for various storage needs.</p>
     </section>
