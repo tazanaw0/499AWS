@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
+<title>AWS Security</title>
+<link rel="stylesheet" href="secure.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Josefin+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo"> <!--Navbar logo/text-->
+                Understanding Security w. Amazon Web Services (AWS)
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="navbar-dropdown">
+                    <label for="dropdown-toggle1" class="dropdown-toggle-label">Topics</label>
+                    <ul class="dropdown-menu">
+                    <li><a href="s3.html">Understanding AWS S3</a></li>
+                    <li><a href="static.html">Static vs. Dynamic Websites</a></li>
+                    <li><a href="cli.html">AWS CLI and/or AWS SDKs</a></li>
+                    <li><a href="dns.html">DNS Configuration</a></li>
+                    <li><a href="secure.html">Security</a></li>
+                    <li><a href="perform.html">Performance Optimization</a></li>
+                    <li><a href="cost.html">Cost Optimization</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Feedback</a></li>
+            </ul>
+        </nav> 
+    </header> 
+
+    <section id="Introduction">
+        <h2>Introduction</h2>
+        <p>Amazon Web Services (AWS) provides a wide range of powerful security features that help protect your data and resources in the cloud. These features are essential for maintaining the confidentiality, integrity, and availability of your applications and data. In this section, we will explore three crucial security components: IAM (Identity and Access Management) policies, AWS S3 bucket policies, and CloudFront origin access identities.</p>
+    </section>
+
+    <section id="iam-policies">
+        <h2>Indentity Access Management (IAM) Policies:</h2>
+        <p>IAM is AWS's identity management service, allowing you to manage users, groups, and roles and control their access to AWS resources.</p>
+        <p>IAM policies are JSON documents that define the permissions users or entities have to interact with AWS resources.</p>
+        <p>With IAM policies, you can grant specific permissions or restrict access to specific actions, resources, or services, ensuring the principle of least privilege.</p>
+        <p>IAM policies follow the "deny by default" approach, meaning users have no access to resources unless explicitly granted through policies.</p>
+    </section>
+
+    <section id="bucket-policies">
+        <h2>Bucket Policies:</h2>
+        <p>Amazon S3 (Simple Storage Service) is a scalable object storage service, and its bucket policies provide fine-grained control over access to S3 buckets and their objects.</p>
+        <p>S3 bucket policies are similar to IAM policies but apply specifically to S3 buckets and can be used to grant cross-account permissions or make objects publicly accessible.</p>
+        <p>With bucket policies, you can define rules for accessing and managing objects, including read, write, and delete permissions.</p>
+        <p>S3 bucket policies can be combined with IAM policies to implement layered security controls.</p>
+    </section>
+
+    <section id="origin-access">
+        <h2>CloudFront Origin Access Identites (OAI)</h2>
+        <p>Amazon CloudFront is a content delivery network that helps distribute content globally with low-latency and high availability.</p>
+        <p>CloudFront Origin Access Identities (OAI) are special identities used to control access to the origin of your CloudFront distribution, such as an S3 bucket or an HTTP server.</p>
+        <p>By using OAI, you can restrict direct access to your origin and only allow access through CloudFront, enhancing security and reducing the risk of unauthorized access.</p>
+        <p>OAI works in combination with S3 bucket policies or other origin servers' access controls to provide additional layers of security for your content.</p>
+    </section>
+
+    <section id="Conclusion">
+        <h2>Conclusion</h2>
+        <p>AWS's security features, including IAM policies, AWS S3 bucket policies, and CloudFront origin access identities, play a critical role in securing your AWS resources and data. With IAM policies, you can manage user access to various services and resources, adhering to the principle of least privilege. S3 bucket policies provide fine-grained control over access to your S3 buckets and objects, while CloudFront origin access identities add an extra layer of security for your content distribution. By effectively utilizing these security features, you can enhance the protection of your AWS infrastructure, applications, and data, ensuring a robust and secure cloud environment.</p>
+    </section>
+</body>
+</html>
